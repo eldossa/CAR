@@ -1,0 +1,317 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+
+
+/* UTILITIES */
+
+.padd-top-btm-60 {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+/* TEXT STYLES */
+.section-title-style {
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.white {
+  color: white;
+}
+
+.darkgreen {
+  color: #2c3e50;
+}
+
+.bkg-darkgreen {
+  background: #2c3e50;
+}
+
+.bkg-watergreen {
+  background: #1abc9c;
+}
+
+.font-lato {
+  font-family: 'Lato', sans-serif;
+}
+
+/* DIVIDER */
+.divider {
+  margin-bottom: 10px;
+}
+
+.divider-line,
+.divider-icon {
+  display: inline-block;
+}
+
+.divider-line {
+  background: white;
+  width: 100%;
+  max-width: 140px;
+  height: 2px;
+  border-radius: 1rem;
+  border-color: #2c3e50;
+  margin-bottom: 8px;
+}
+
+.divider-line-darkgreen {
+  background: #2c3e50;
+}
+
+.divider-icon {
+  font-size: 32px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* STYLES */
+.navbar {
+  margin-bottom: 0;
+  padding: 25px;
+}
+
+.navbar-default {
+  border: 0;
+  border-radius: 0;
+}
+
+.navbar .container .navbar-brand,
+.navbar-default .navbar-nav li a {
+  color: white;
+}
+
+.navbar .container .navbar-brand {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.navbar-default .navbar-nav li a {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.navbar-default .navbar-toggle .icon-bar{
+  background-color: white;
+}
+
+.navbar-default .navbar-toggle:hover {
+  background: #1abc9c;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #1abc9c;
+}
+
+/* JUMBOTRON */
+
+.jumbotron {
+  margin-top: 75px;
+}
+
+.jumbotron img {
+  height: 255px;
+}
+
+.jumbotron h1 {
+  font-size: 64px;
+  font-weight: 700;
+}
+
+.jumbotron h3 {
+  font-size: 24px;
+}
+
+/* PORTFOLIO */
+
+
+.portfolio img {
+  max-width: 100%;
+}
+
+.portfolio .item-box {
+  border-radius: 100%;
+  max-width: 100%;
+  margin-bottom: 30px;
+  border-radius: 7px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+}
+
+.portfolio .layover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.portfolio .layover:hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(26, 188, 156, 0.9);
+  transition: 0.5s;
+}
+
+.portfolio .layover i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-size: 72px;
+  font-weight: 900;
+  color: white;
+  display: none;
+}
+
+.portfolio .layover:hover i {
+  display: block;
+}
+
+.portfolio .divider {
+  margin-bottom: 30px;
+}
+
+/* DEBUG: COL BEFORE INVECE DELLA CLASSE APPOSITA: SE PO FA'?  */
+/* .portfolio .item-box:hover:before {
+  font-family: "Font Awesome 5 Pro", "Font Awesome 5 Free";
+  font-size: 72px;
+  font-weight: 900;
+  color: white;
+  content: '\f067';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(26, 188, 156, 0.9);
+} */
+
+/* ABOUT */
+.about p {
+  text-align: left;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.about .btn {
+  background-color: inherit;
+  color: white;
+  border: 2px solid white;
+  padding: 15px;
+}
+
+.about .btn:hover {
+  background: white;
+  color: #2c3e50;
+  border: 2px solid white;
+}
+
+/* FORM STYLES */
+.large-form {
+  padding-bottom: 100px;
+}
+
+.large-form input[type=name],
+.large-form input[type=email],
+.large-form input[type=text],
+.large-form textarea.form-control {
+  height: 80px;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  box-shadow: none;
+  font-size: 24px;
+  padding-bottom: 20px;
+}
+
+.large-form input[type=name]:focus,
+.large-form input[type=email]:focus,
+.large-form input[type=text]:focus,
+.large-form textarea.form-control:focus {
+  border-color: gray;
+}
+
+textarea.form-control {
+  height: 200px;
+}
+
+.large-form .btn {
+  border: 2px solid #1abc9c;
+  padding: 15px 30px;
+}
+
+.large-form .btn:hover {
+  background: #159a80;
+  border: 2px solid #159a80;
+}
+
+/* FOOTER */
+.main-footer h3 {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 25px;
+}
+
+.main-footer span {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.main-footer span a {
+  color: #1abc9c;
+}
+
+.main-footer .btn {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  position: relative;
+  color: white;
+  border: 2px solid white;
+}
+
+.main-footer .btn i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 22px;
+}
+
+.main-footer .btn:hover {
+  color: #2c3e50;
+  background: white;
+}
+
+.bottom-footer {
+  background: #1a252f;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+/* RESPONSIVE */
+@media all and (max-width: 500px) {
+  .divider-line {
+    max-width: 50px;
+  }
+}
+
+@media all and (max-width: 500px) {
+  .jumbotron h1,
+  .section-title-style {
+    font-size: 40px;
+  }
+}
